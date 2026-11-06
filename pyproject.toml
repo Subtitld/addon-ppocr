@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subtitld-addon-ppocr"
+version = "26.11.1"
+description = "Subtitld add-on: offline OCR of picture subtitles with PP-OCRv5"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Subtitld", email = "jbopen@gmail.com" }]
+requires-python = ">=3.10"
+
+# ONNX Runtime runs the recognition models; the pictures are read, cut into
+# lines and scaled with numpy (ppocr_addon/image.py), so neither Pillow nor
+# OpenCV is needed. The models are pinned by tools/fetch_models.py.
+dependencies = [
+    "onnxruntime==1.31.0",
+    "numpy>=1.26,<3",  # constraints.txt pins the release build
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.10"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+ppocr-addon = "ppocr_addon.__main__:main"
+
+[tool.setuptools]
+packages = ["ppocr_addon"]
+
+[tool.setuptools.package-data]
+ppocr_addon = ["selftest.pgm", "models/*/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,12 @@
+PP-OCRv5 add-on for Subtitld
+Copyright 2026 Subtitld contributors
+Licensed under the Apache License, Version 2.0 (LICENSE).
+
+The archive carries PaddlePaddle's PP-OCRv5 mobile text recognition models,
+unchanged, as converted to ONNX by RapidAI:
+
+  PP-OCRv5 (c) PaddlePaddle Authors, Apache-2.0
+    https://github.com/PaddlePaddle/PaddleOCR
+  ONNX conversion: RapidAI/RapidOCR, Apache-2.0
+    https://github.com/RapidAI/RapidOCR
+    https://www.modelscope.cn/models/RapidAI/RapidOCR (tag v3.10.0)

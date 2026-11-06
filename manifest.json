@@ -1,0 +1,288 @@
+{
+  "manifest_version": 1,
+  "id": "ppocr",
+  "version": "26.11.1",
+  "display_name": "PP-OCRv5 (offline OCR)",
+  "summary": "Reads picture subtitles (DVD's VobSub, Blu-ray's PGS) as text, so Subtitld can open and edit them. PaddleOCR's PP-OCRv5 mobile models, on the CPU, offline: Latin-script languages, Chinese, Japanese, Korean, Russian and other Cyrillic, Greek, Arabic script, Hindi and Devanagari, Thai, Tamil and Telugu.",
+  "author": "Subtitld",
+  "homepage": "https://github.com/Subtitld/addon-ppocr",
+  "license": "Apache-2.0 (add-on); Apache-2.0 (PP-OCRv5 models by PaddlePaddle, ONNX conversion by RapidAI)",
+  "executable": "bin/ppocr-addon",
+  "protocol": 1,
+  "startup_timeout_sec": 30,
+  "platforms": [
+    "linux",
+    "macos",
+    "windows"
+  ],
+  "tasks": [
+    "ocr.recognize"
+  ],
+  "compute": "cpu",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "nl",
+    "ca",
+    "gl",
+    "eu",
+    "pl",
+    "cs",
+    "sk",
+    "sl",
+    "hr",
+    "bs",
+    "hu",
+    "tr",
+    "fi",
+    "sv",
+    "da",
+    "no",
+    "nb",
+    "nn",
+    "is",
+    "et",
+    "lt",
+    "sq",
+    "ga",
+    "id",
+    "ms",
+    "sw",
+    "tl",
+    "fil",
+    "af",
+    "la",
+    "oc",
+    "uz",
+    "jv",
+    "su",
+    "zu",
+    "zh",
+    "cmn",
+    "yue",
+    "ja",
+    "ko",
+    "ru",
+    "uk",
+    "be",
+    "bg",
+    "sr",
+    "mk",
+    "kk",
+    "ky",
+    "mn",
+    "tt",
+    "tg",
+    "ba",
+    "cv",
+    "el",
+    "ar",
+    "fa",
+    "ur",
+    "ps",
+    "ku",
+    "ug",
+    "sd",
+    "hi",
+    "mr",
+    "ne",
+    "sa",
+    "mai",
+    "bho",
+    "new",
+    "th",
+    "ta",
+    "te"
+  ],
+  "models": [
+    {
+      "id": "en",
+      "display_name": "English (en_PP-OCRv5_mobile_rec)",
+      "file": "models/en/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "latin",
+      "display_name": "Latin script (latin_PP-OCRv5_mobile_rec)",
+      "file": "models/latin/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": true
+    },
+    {
+      "id": "ch",
+      "display_name": "Chinese and Japanese (ch_PP-OCRv5_mobile_rec)",
+      "file": "models/ch/rec.onnx",
+      "size_mb": 16,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "korean",
+      "display_name": "Korean (korean_PP-OCRv5_mobile_rec)",
+      "file": "models/korean/rec.onnx",
+      "size_mb": 13,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "eslav",
+      "display_name": "Russian, Ukrainian, Belarusian (eslav_PP-OCRv5_mobile_rec)",
+      "file": "models/eslav/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "cyrillic",
+      "display_name": "Other Cyrillic script (cyrillic_PP-OCRv5_mobile_rec)",
+      "file": "models/cyrillic/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "el",
+      "display_name": "Greek (el_PP-OCRv5_mobile_rec)",
+      "file": "models/el/rec.onnx",
+      "size_mb": 7,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "arabic",
+      "display_name": "Arabic script (arabic_PP-OCRv5_mobile_rec)",
+      "file": "models/arabic/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "devanagari",
+      "display_name": "Devanagari (devanagari_PP-OCRv5_mobile_rec)",
+      "file": "models/devanagari/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "th",
+      "display_name": "Thai (th_PP-OCRv5_mobile_rec)",
+      "file": "models/th/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "ta",
+      "display_name": "Tamil (ta_PP-OCRv5_mobile_rec)",
+      "file": "models/ta/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    },
+    {
+      "id": "te",
+      "display_name": "Telugu (te_PP-OCRv5_mobile_rec)",
+      "file": "models/te/rec.onnx",
+      "size_mb": 8,
+      "license": "Apache-2.0",
+      "bundled": true,
+      "default": false
+    }
+  ],
+  "disk_required_mb": 260,
+  "ram_required_mb": 512,
+  "config_schema": {
+    "fields": [
+      {
+        "key": "script",
+        "type": "select",
+        "label": "Script",
+        "default": "auto",
+        "options": [
+          {
+            "value": "auto",
+            "label": "From the subtitles' language"
+          },
+          {
+            "value": "en",
+            "label": "English"
+          },
+          {
+            "value": "latin",
+            "label": "Latin script"
+          },
+          {
+            "value": "ch",
+            "label": "Chinese and Japanese"
+          },
+          {
+            "value": "korean",
+            "label": "Korean"
+          },
+          {
+            "value": "eslav",
+            "label": "Russian, Ukrainian, Belarusian"
+          },
+          {
+            "value": "cyrillic",
+            "label": "Other Cyrillic script"
+          },
+          {
+            "value": "el",
+            "label": "Greek"
+          },
+          {
+            "value": "arabic",
+            "label": "Arabic script"
+          },
+          {
+            "value": "devanagari",
+            "label": "Devanagari"
+          },
+          {
+            "value": "th",
+            "label": "Thai"
+          },
+          {
+            "value": "ta",
+            "label": "Tamil"
+          },
+          {
+            "value": "te",
+            "label": "Telugu"
+          }
+        ],
+        "help": "The model that reads the pictures. Automatic picks it from the language you choose when you open the subtitles; pick one here for subtitles in a language it does not know, Serbian in Latin letters, say."
+      },
+      {
+        "key": "threads",
+        "type": "int",
+        "label": "CPU threads",
+        "default": 0,
+        "min": 0,
+        "max": 64,
+        "step": 1,
+        "help": "0 picks half the logical processors, at most 4."
+      }
+    ]
+  }
+}

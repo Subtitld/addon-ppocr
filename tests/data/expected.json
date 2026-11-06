@@ -1,0 +1,34 @@
+{
+ "en_two_lines": {
+  "language": "en",
+  "text": "I told you not to come back here.\nWhy didn't you listen?"
+ },
+ "en_dvd": {
+  "language": "en",
+  "text": "- Are you okay?\n- I'm fine, thanks."
+ },
+ "pt_accents": {
+  "language": "pt-br",
+  "text": "É difícil explicar\no que aconteceu."
+ },
+ "fr_dvd": {
+  "language": "fr-fr",
+  "text": "L'été dernier, à Noël,\nj'étais très ému."
+ },
+ "de_pgs": {
+  "language": "de-de",
+  "text": "Das Mädchen hat große Füße."
+ },
+ "ru_pgs": {
+  "language": "ru-ru",
+  "text": "Это уже слишком поздно,\nнам надо идти."
+ },
+ "zh_pgs": {
+  "language": "cmn-hans-cn",
+  "text": "我们必须马上离开这里。\n快点！"
+ },
+ "ja_dvd": {
+  "language": "ja-jp",
+  "text": "どこへ行くの？"
+ }
+}

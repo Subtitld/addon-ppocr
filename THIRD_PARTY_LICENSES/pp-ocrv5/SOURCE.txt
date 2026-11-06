@@ -1,0 +1,18 @@
+PP-OCRv5 mobile text recognition models
+
+The models in bin/_internal/ppocr_addon/models/ (rec.onnx and dict.txt for
+each script) are PaddlePaddle's PP-OCRv5 mobile recognition models:
+
+  Copyright (c) PaddlePaddle Authors
+  Licensed under the Apache License, Version 2.0 (LICENSE in this folder)
+  https://github.com/PaddlePaddle/PaddleOCR
+
+converted from Paddle's format to ONNX by RapidAI's RapidOCR project
+(Apache-2.0), as published on ModelScope, RapidAI/RapidOCR, tag v3.10.0:
+
+  https://www.modelscope.cn/models/RapidAI/RapidOCR
+  onnx/PP-OCRv5/rec/<script>_PP-OCRv5_rec_mobile.onnx
+  paddle/PP-OCRv5/rec/<script>_PP-OCRv5_rec_mobile/<dictionary>.txt
+
+The files are unchanged; tools/fetch_models.py in the add-on's repository
+pins each one by sha256.

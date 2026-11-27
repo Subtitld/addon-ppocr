@@ -15,3 +15,4 @@ frozen-report.xml
 .spike/
 sources.txt
 ppocr_addon/models/
+release-staging-haiku/

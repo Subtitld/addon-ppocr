@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
   "id": "ppocr",
-  "version": "26.11.1",
+  "version": "26.11.2",
   "display_name": "PP-OCRv5 (offline OCR)",
   "summary": "Reads picture subtitles (DVD's VobSub, Blu-ray's PGS) as text, so Subtitld can open and edit them. PaddleOCR's PP-OCRv5 mobile models, on the CPU, offline: Latin-script languages, Chinese, Japanese, Korean, Russian and other Cyrillic, Greek, Arabic script, Hindi and Devanagari, Thai, Tamil and Telugu.",
   "author": "Subtitld",
